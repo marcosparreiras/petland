@@ -1,12 +1,12 @@
 package com.patland.domain.cadastro;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Animal {
 
   private Integer id;
   private String nome;
-  private Date aniversario;
+  private LocalDate aniversario;
   private Especie especie;
 
   public Integer getId() {
@@ -25,11 +25,11 @@ public class Animal {
     this.nome = nome;
   }
 
-  public Date getAniversatio() {
+  public LocalDate getAniversatio() {
     return this.aniversario;
   }
 
-  public void setAniversario(Date aniversario) {
+  public void setAniversario(LocalDate aniversario) {
     this.aniversario = aniversario;
   }
 
@@ -43,7 +43,12 @@ public class Animal {
 
   public Animal() {}
 
-  public Animal(Integer id, String nome, Date aniversario, Especie especie) {
+  public Animal(
+    Integer id,
+    String nome,
+    LocalDate aniversario,
+    Especie especie
+  ) {
     this.id = id;
     this.nome = nome;
     this.aniversario = aniversario;

@@ -1,14 +1,14 @@
-package com.patland.domain.servico;
+package com.patland.domain.atendimento;
 
-import java.sql.Date;
-import java.sql.Time;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
-public class Servico {
+public class Atendimento {
 
   private Integer id;
   private String descicao;
-  private Date data;
-  private Time hora;
+  private LocalDate data;
+  private LocalTime hora;
   private Integer cadastroId;
 
   public Integer getId() {
@@ -19,11 +19,11 @@ public class Servico {
     return this.descicao;
   }
 
-  public Date getData() {
+  public LocalDate getData() {
     return this.data;
   }
 
-  public Time getHora() {
+  public LocalTime getHora() {
     return this.hora;
   }
 
@@ -31,11 +31,11 @@ public class Servico {
     return this.cadastroId;
   }
 
-  public Servico(
+  public Atendimento(
     Integer id,
     String descricao,
-    Date data,
-    Time hora,
+    LocalDate data,
+    LocalTime hora,
     Integer cadastroId
   ) {
     this.id = id;
