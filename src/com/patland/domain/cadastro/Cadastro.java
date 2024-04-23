@@ -39,8 +39,12 @@ public class Cadastro {
     this.endereco = endereco;
   }
 
-  public Cadastro(Integer id, String nome) {
+  public Cadastro() {}
+
+  public Cadastro(Integer id, String nome, Perfil perfil, Endereco endereco) {
     this.id = id;
     this.nome = nome;
+    this.perfil = perfil;
+    this.endereco = endereco;
   }
 }
