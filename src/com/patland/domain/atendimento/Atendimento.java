@@ -15,6 +15,8 @@ public class Atendimento {
   private Cadastro solicitante;
   private Animal paciente;
   private ProdutoServico servico;
+  private AtendimentoTipo atendimentoTipo;
+  private AtendimentoStatus atendimentoStatus;
 
   public Integer getId() {
     return this.id;
@@ -44,6 +46,14 @@ public class Atendimento {
     return this.servico;
   }
 
+  public AtendimentoTipo getAtendimentoTipo() {
+    return this.atendimentoTipo;
+  }
+
+  public AtendimentoStatus getAtendimentoStatus() {
+    return this.atendimentoStatus;
+  }
+
   public Atendimento() {}
 
   public Atendimento(
@@ -53,7 +63,9 @@ public class Atendimento {
     LocalTime hora,
     Cadastro solicitante,
     Animal paciente,
-    ProdutoServico servico
+    ProdutoServico servico,
+    AtendimentoTipo atendimentoTipo,
+    AtendimentoStatus atendimentoStatus
   ) {
     this.id = id;
     this.descicao = descricao;
@@ -62,5 +74,7 @@ public class Atendimento {
     this.solicitante = solicitante;
     this.paciente = paciente;
     this.servico = servico;
+    this.atendimentoTipo = atendimentoTipo;
+    this.atendimentoStatus = atendimentoStatus;
   }
 }
