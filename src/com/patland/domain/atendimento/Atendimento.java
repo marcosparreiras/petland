@@ -22,36 +22,72 @@ public class Atendimento {
     return this.id;
   }
 
+  public void setId(Integer id) {
+    this.id = id;
+  }
+
   public String getDescricao() {
     return this.descicao;
+  }
+
+  public void setDescricao(String descricao) {
+    this.descicao = descricao;
   }
 
   public LocalDate getData() {
     return this.data;
   }
 
+  public void setData(LocalDate data) {
+    this.data = data;
+  }
+
   public LocalTime getHora() {
     return this.hora;
+  }
+
+  public void setHora(LocalTime hora) {
+    this.hora = hora;
   }
 
   public Cadastro getSolicitante() {
     return this.solicitante;
   }
 
+  public void setSolicitante(Cadastro solicitante) {
+    this.solicitante = solicitante;
+  }
+
   public Animal getPaciente() {
     return this.paciente;
+  }
+
+  public void setPaciente(Animal paciente) {
+    this.paciente = paciente;
   }
 
   public ProdutoServico getServico() {
     return this.servico;
   }
 
+  public void setServico(ProdutoServico servico) {
+    this.servico = servico;
+  }
+
   public AtendimentoTipo getAtendimentoTipo() {
     return this.atendimentoTipo;
   }
 
+  public void setAtendimentoTipo(AtendimentoTipo atendimentoTipo) {
+    this.atendimentoTipo = atendimentoTipo;
+  }
+
   public AtendimentoStatus getAtendimentoStatus() {
     return this.atendimentoStatus;
+  }
+
+  public void setAtendimentoStatus(AtendimentoStatus atendimentoStatus) {
+    this.atendimentoStatus = atendimentoStatus;
   }
 
   public Atendimento() {}
