@@ -15,8 +15,9 @@ public class Atendimento {
   private Cadastro solicitante;
   private Animal paciente;
   private ProdutoServico servico;
-  private AtendimentoTipo atendimentoTipo;
-  private AtendimentoStatus atendimentoStatus;
+  private Double valor;
+  private AtendimentoTipo tipo;
+  private AtendimentoStatus status;
 
   public Integer getId() {
     return this.id;
@@ -74,20 +75,28 @@ public class Atendimento {
     this.servico = servico;
   }
 
-  public AtendimentoTipo getAtendimentoTipo() {
-    return this.atendimentoTipo;
+  public Double getValor() {
+    return this.valor;
   }
 
-  public void setAtendimentoTipo(AtendimentoTipo atendimentoTipo) {
-    this.atendimentoTipo = atendimentoTipo;
+  public void setValor(Double valor) {
+    this.valor = valor;
   }
 
-  public AtendimentoStatus getAtendimentoStatus() {
-    return this.atendimentoStatus;
+  public AtendimentoTipo getTipo() {
+    return this.tipo;
   }
 
-  public void setAtendimentoStatus(AtendimentoStatus atendimentoStatus) {
-    this.atendimentoStatus = atendimentoStatus;
+  public void setTipo(AtendimentoTipo tipo) {
+    this.tipo = tipo;
+  }
+
+  public AtendimentoStatus getStatus() {
+    return this.status;
+  }
+
+  public void setStatus(AtendimentoStatus status) {
+    this.status = status;
   }
 
   public Atendimento() {}
@@ -100,8 +109,9 @@ public class Atendimento {
     Cadastro solicitante,
     Animal paciente,
     ProdutoServico servico,
-    AtendimentoTipo atendimentoTipo,
-    AtendimentoStatus atendimentoStatus
+    Double valor,
+    AtendimentoTipo tipo,
+    AtendimentoStatus status
   ) {
     this.id = id;
     this.descicao = descricao;
@@ -110,7 +120,8 @@ public class Atendimento {
     this.solicitante = solicitante;
     this.paciente = paciente;
     this.servico = servico;
-    this.atendimentoTipo = atendimentoTipo;
-    this.atendimentoStatus = atendimentoStatus;
+    this.valor = valor;
+    this.tipo = tipo;
+    this.status = status;
   }
 }
